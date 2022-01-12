@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Adani</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome!"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="sign_up_text">Haven\'t Registered Yet? Sign Up</string>
+    <string name="login_text">Already Signed Up? Login</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="name">Name</string>
+    <string name="login">Login</string>
+    <string name="dob">Date of Birth</string>
+    <string name="address">Address</string>
+    <string name="adani_address">1st Floor LIC Colony, Devidas Lane, Borivali West, Mumbai - 400103</string>
+    <string name="update">Update</string>
+    <string name="update_profile">Update Profile</string>
+    <string name="select_pin">Select Pin</string>
+    <string-array name="pin_codes">
+        <item>Select Pin Code</item>
+        <item>401203</item>
+        <item>400050</item>
+        <item>401407</item>
+        <item>400040</item>
+        <item>400004</item>
+        <item>412421</item>
+        <item>400504</item>
+        <item>400078</item>
+        <item>400198</item>
+        <item>411674</item>
+    </string-array>
+</resources>
