@@ -2,10 +2,7 @@ package com.example.logindemo_adani
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
-import android.view.WindowManager
 import com.example.logindemo_adani.databinding.ActivityMainBinding
-import com.example.logindemo_adani.fragments.Login
 import com.example.logindemo_adani.fragments.SignUp
 
 class MainActivity : AppCompatActivity()

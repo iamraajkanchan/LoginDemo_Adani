@@ -71,20 +71,26 @@ class SignUp : Fragment()
             }
         }
         btnSignUp.setOnClickListener {
-            val notification = signUpViewModel.insertUser(edtName , edtDOB , edtAddress , pin , edtUsername , edtPassword)
-            if (notification.equals("User Registered Successfully!!!" , true))
+            try
             {
-                Toast.makeText(context , notification , Toast.LENGTH_LONG).show()
-                val bundle = Bundle().apply {
-                    putString("username" , edtUsername.text.toString())
+                val notification = signUpViewModel.insertUser(edtName , edtDOB , edtAddress , pin , edtUsername , edtPassword)
+                if (notification.equals("User Registered Successfully!!!" , true))
+                {
+                    Toast.makeText(context , notification , Toast.LENGTH_LONG).show()
+                    val bundle = Bundle().apply {
+                        putString("username" , edtUsername.text.toString())
+                    }
+                    Intent(activity , HomeScreen::class.java).apply {
+                        putExtra("userBundle" , bundle)
+                        startActivity(this)
+                    }
+                } else
+                {
+                    Toast.makeText(context , notification , Toast.LENGTH_LONG).show()
                 }
-                Intent(activity , HomeScreen::class.java).apply {
-                    putExtra("userBundle" , bundle)
-                    startActivity(this)
-                }
-            } else
+            } catch (e : Exception)
             {
-                Toast.makeText(context , notification , Toast.LENGTH_LONG).show()
+                e.printStackTrace()
             }
         }
         tvRedirectLogin.setOnClickListener {

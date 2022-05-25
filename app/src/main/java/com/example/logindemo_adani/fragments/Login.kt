@@ -43,8 +43,7 @@ class Login : Fragment()
                         putExtra("userBundle" , bundle)
                         startActivity(this)
                     }
-                }
-                else
+                } else
                 {
                     Toast.makeText(requireActivity() , "Incorrect Credentials!!!" , Toast.LENGTH_LONG).show()
                 }

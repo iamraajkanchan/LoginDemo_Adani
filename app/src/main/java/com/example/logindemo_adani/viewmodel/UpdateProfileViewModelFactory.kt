@@ -6,9 +6,8 @@ import com.example.logindemo_adani.repositories.UpdateProfileRepository
 
 class UpdateProfileViewModelFactory(private val updateProfileRepository : UpdateProfileRepository) : ViewModelProvider.Factory
 {
-    override fun <T : ViewModel?> create(modelClass : Class<T>) : T
+    override fun <T : ViewModel> create(modelClass : Class<T>) : T
     {
         return UpdateProfileViewModel(updateProfileRepository) as T
     }
-
 }
